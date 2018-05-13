@@ -1,0 +1,3 @@
+- Create db named 'naltest'
+- Import file asserts/work.sql into db.
+- Open cmd, run 'composer install'
