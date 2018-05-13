@@ -1,4 +1,7 @@
 <?php
+namespace Src\Models; 
+use DB\Db;
+
 class TodoList {
 
     public $workName;
@@ -47,6 +50,7 @@ class TodoList {
         // Edit work
         $db->query("UPDATE `work` SET work_name='{$data['workName']}', start_date='{$data['startDate']}', end_date='{$data['endDate']}', status='{$data['status']}' WHERE id='{$id}';");
     }
+    
     public function deleteWork($id) {
         $db = Db::getInstance();
         // Delete work based on id

@@ -11,18 +11,18 @@
             </tr>
             <tr>
                 <td><label>Work Name</label></td>
-                <td><input type="text" name="workName" class="txtField"></td>
+                <td><input type="text" name="workName" placeholder="Work Name"></td>
             </tr>
             <tr>
                 <td><label>Start Date</label></td>
-                <td><input type="text" name="startDate" class="txtField"></td>
+                <td><input type="text" name="startDate" placeholder="YYYY-MM-DD"></td>
             </tr>
                 <td><label>End Date</label></td>
-                <td><input type="text" name="endDate" class="txtField"></td>
+                <td><input type="text" name="endDate" placeholder="YYYY-MM-DD"></td>
             </tr>
                 <td><label>Status</label></td>
                 <td>
-                    <!-- <input type="text" name="status" class="txtField"> -->
+                    <!-- <input type="text" name="status" placeholder=""> -->
                     <select name="status">
                         <option value="0">Pending</option>
                         <option value="1">Doing</option>
@@ -31,7 +31,8 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><input type="submit" name="submit" value="Add" class="btnSubmit"></td>
+                <td><input type="submit" name="submit" value="Add" class="btnSubmit"></td>
+                <td><?php if(isset($msg)) { echo $msg; } ?></td>
             </tr>
         </table>
     </form>
